@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <h3 class="mx-3">Shop</h3>
             <div class="collapse navbar-collapse">
@@ -19,6 +19,4 @@
             </div>
         </div>
     </nav>
-
-
 </header>

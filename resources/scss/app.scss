@@ -9,10 +9,38 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
+body {
+    height: 100%;
+}
 
 header {
+    nav {
+        height: 100px;
+    }
+
     .navbar-nav .nav-link.active {
         font-weight: bold;
         color: $active-color;
+    }
+}
+
+main {
+    height: 500px;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: $dark-text;
+    color: $light-text;
+
+    button {
+        background-color: $light-text;
+        color: $dark-text;
+
+        i {
+            color: $active-color;
+        }
     }
 }
