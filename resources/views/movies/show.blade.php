@@ -13,6 +13,7 @@
                 <h5>{{ $movie->original_title }}</h5>
                 <p>Language: {{ $movie->language }}</p>
                 <p>Vote: {{ $movie->vote }}</p>
+                <a href="{{ route('movies.index') }}" class="btn btn-dark">Indietro</a>
             </div>
         </div>
     </div>
