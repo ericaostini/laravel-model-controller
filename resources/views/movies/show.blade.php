@@ -1,7 +1,21 @@
-@extends('layouts.app');
+@extends('layouts.app')
 
 @section('title', $movie->title)
 
 @section('content')
-    <div>{{ $movie->title }}</div>
+    <div class="container">
+        <h3>{{ $movie->title }}</h3>
+        <div class="row">
+            <div class="col-4 single-image">
+                <img src="{{ $movie->image }}" alt="{{ $movie->title }}">
+            </div>
+            <div class="col-6">
+                <h5>{{ $movie->original_title }}</h5>
+                <p>Language: {{ $movie->language }}</p>
+                <p>Vote: {{ $movie->vote }}</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
 @endsection
