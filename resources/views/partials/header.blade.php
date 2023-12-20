@@ -9,7 +9,8 @@
                             href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Books</a>
+                        <a class="nav-link {{ Route::currentRoutename() == 'books.index' ? 'active' : '' }}"
+                            href="{{ route('books.index') }}">Books</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Route::currentRoutename() == 'movies.index' ? 'active' : '' }}"
